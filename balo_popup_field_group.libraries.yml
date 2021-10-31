@@ -1,0 +1,11 @@
+core:
+  version: VERSION
+  css:
+    base:
+      assets/css/inline_popup_field_group.css: { }
+  js:
+    assets/js/inline_popup_field_group.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
