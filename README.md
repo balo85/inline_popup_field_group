@@ -1,13 +1,12 @@
 # popup-field-group
-Define a custom display mode for Drupal Field Group
+This module define a custom display mode for Drupal Field Group.
 
-The base idea was to use *Popup field group*, but is doesn't work for me.
-In my use case I need to manage fields as popup inside a nested paragraphs.
+The module is based on the idea of *Popup field group*, but this module didn't work fine for my use case, because I need to manage fields as popup inside a nested paragraphs.
 
-*Popup field group* make use of *Drupal.dialog* JS library. For what I've seen, using it in nested paragraphs make the dialog remove the original fields, leaving the node save without this informations.
+*Popup field group* make use of *Drupal.dialog* JS library. Using it in nested paragraphs give me problems because the dialog popup remove the original fields from my edit panel, leaving the node saved without the informations about the field.
 
-My module keep all the fiels in a fielset, hiding it and adding buttons to show/hide the fieldset.
-So all the fields stay always in the page, keeping all the info during the saving of the node.
+So, my module keep all the fiels in a fielset printed in the DOM, hiding it by CSS and adding buttons to show/hide the fieldset by JS.
+All the fields stay always in the page DOM, keeping all the informations during the saving of the node.
 
 
 ## Require

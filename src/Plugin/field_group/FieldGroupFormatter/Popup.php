@@ -6,12 +6,12 @@ use Drupal\Component\Utility\Html;
 use Drupal\field_group\FieldGroupFormatterBase;
 
 /**
- * Plugin implementation of the 'inline popup' formatter.
+ * Plugin implementation of the 'Fake popup' formatter.
  *
  * @FieldGroupFormatter(
  *   id = "popup_fake",
- *   label = @Translation("Popup fake"),
- *   description = @Translation("This popup renders the inner content in a fake modal with the title as legend."),
+ *   label = @Translation("Popup"),
+ *   description = @Translation("This popup renders the inner content in a fake modal with custom button."),
  *   supported_contexts = {
  *     "form",
  *     "view",
