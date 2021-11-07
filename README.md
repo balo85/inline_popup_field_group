@@ -32,9 +32,7 @@ This module requires the following modules:
 INSTALLATION
 ------------
 
-Install the Inline Popup Field Group module as you would normally install a contributed
-Drupal module. Visit https://www.drupal.org/node/1897420 for further
-information.
+Install the Inline Popup Field Group module as you would normally install a contributed Drupal module. Visit https://www.drupal.org/node/1897420 for further information.
 
 
 CONFIGURATION
