@@ -1,16 +1,66 @@
-# popup-field-group
-This module define a custom display mode for Drupal Field Group.
+CONTENTS OF THIS FILE
+---------------------
 
-The module is based on the idea of *Popup field group*, but this module didn't work fine for my use case, because I need to manage fields as popup inside a nested paragraphs.
+* Introduction
+* Requirements
+* Installation
+* Configuration
+* Maintainers
 
-*Popup field group* make use of *Drupal.dialog* JS library. Using it in nested paragraphs give me problems because the dialog popup remove the original fields from my edit panel, leaving the node saved without the informations about the field.
 
-So, my module keep all the fiels in a fielset printed in the DOM, hiding it by CSS and adding buttons to show/hide the fieldset by JS.
-All the fields stay always in the page DOM, keeping all the informations during the saving of the node.
+INTRODUCTION
+------------
+
+The *Inline Popup Field Group* define a custom display mode for Drupal Field Group.
+The base idea was to use *Popup field group* (URL https://www.drupal.org/project/popup_field_group), but is doesn't work for me.
+In my use case I need to manage fields as popup inside a nested paragraphs.
+
+*Popup field group* make use of *Drupal.dialog* JS library. For what I've seen, using it in nested paragraphs make the dialog remove the original fields, leaving the node save without this informations.
+
+This module keep all the fiels in a fielset, hiding it and adding buttons to show/hide the fieldset.
+So all the fields stay always in the page, keeping all the info during the saving of the node.
 
 
-## Require
-* Field Group [https://www.drupal.org/project/field_group](https://www.drupal.org/project/field_group)
+REQUIREMENTS
+------------
 
-## Inspired by
-* Popup field group [https://www.drupal.org/project/popup_field_group](https://www.drupal.org/project/popup_field_group)
+This module requires the following modules:
+
+* [Field Group](https://www.drupal.org/project/field_group)
+
+
+INSTALLATION
+------------
+
+Install the Inline Popup Field Group module as you would normally install a contributed
+Drupal module. Visit https://www.drupal.org/node/1897420 for further
+information.
+
+
+CONFIGURATION
+-------------
+
+Use this module in your form visualization as all the other Field Group.
+Add a new Popup Fake container and move inside each field you need.
+Please use **Link text** to define the title of the button in the page.
+
+
+FAQ
+---
+
+Q: Can I define a custom style for my Popup?
+
+A: Yes, you will find all you need in this module. The module have a ready gulpfile to
+compile the scss file that is in assets/scss.
+Please install all the requirements with *npm install* and than run gulp with *gulp watch*.
+Now you can change all you need in assets/scss/inline_popup_field_group.scss
+
+
+MAINTAINERS
+-----------
+
+* Giovanni Rocchini - https://www.drupal.org/u/grocchini
+
+Supporting organization:
+
+* TourTools - https://www.drupal.org/tourtools

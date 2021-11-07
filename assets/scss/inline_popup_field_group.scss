@@ -1,6 +1,6 @@
 @import "variables";
 
-// Classi aggiuntive per il body
+// Additional classes for body
 body.popupFakeEnhanced {
   .popupFakeOverlay {
     position: fixed;
@@ -21,7 +21,7 @@ body.popupFakeEnhanced {
   }
 }
 
-// Wrapper dei bottoni e bottoni opener
+// Wrapper of buttons and buttons
 .fakeButtonsWrp {
   position: relative;
   display: flex;
@@ -49,7 +49,7 @@ body.popupFakeEnhanced {
   }
 }
 
-// Customizzazione fieldset mostrato come popup
+// Fieldset used as popup
 .form-wrapper.field-group-popup-fake {
   position: fixed;
   top: 50%;
@@ -73,7 +73,7 @@ body.popupFakeEnhanced {
     color: $white;
   }
 
-  // Bottone chiusura in header
+  // Closing button in header
   .lblCloser {
     display: block;
     position: absolute;
@@ -90,7 +90,7 @@ body.popupFakeEnhanced {
     text-align: center;
   }
 
-  // Bottone chiusura in footer
+  // Closing button in footer
   .descCLoser {
     display: block;
     margin-top: 10px;
